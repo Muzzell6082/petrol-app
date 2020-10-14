@@ -1,0 +1,10 @@
+{
+  "station1": {
+    "location": "bridge_road",
+    "price": 115.7
+  },
+  "station2": {
+    "location": "grove_road",
+    "price": 112.5
+  }
+}
