@@ -7,17 +7,20 @@
 
 </head>
 <body>
+<div class="w3-content">
+
+</div>
 <tite>Petrol Price Comparison</tite>
 <br>
- <select name="Petrol Station" id="petrol_station">
-          <option selected>station1</option>
-         <option value="BP_Main_North_Road">BP Main North Road</option>
-         <option value="Shell_Grove_Way">Shell Grove Way</option>
-         <option value="Coles_Express_Golden_Grove_Road">Coles Express Golden Grove Road</option>
-         <option value="BP_Bridge_Road">BP Bridge Road</option>
-       </select>
-
-{{ stations.station1 }}
+<select name="stations" id="stations">
+    <option value="{{stations.station1['location']}}">{{stations.station1['location']}}</option>
+    <option>class</option>
+</select>
+<ul>
+    {% if option==value %}
+    <li>{{stations.station1['price']}}</li>
+    {% endif %}
+</ul>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
